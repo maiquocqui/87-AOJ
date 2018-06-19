@@ -1,0 +1,74 @@
+section.breadcrumb-wrap
+	.breadcrumb-img(style="background:url(img/breadcrumb/1.png) no-repeat center center;background-size: cover")
+	.container
+		h1.pagename
+		ol.breadcrumb
+			li
+				a(href="#!")
+					span Home
+			li
+				a(href="#!")
+					span Send a request
+section.request-page
+	.container
+		.request-form
+			.form-img
+				.img(style="background:url(img/dest/4c.jpg) center center no-repeat;background-size: cover")
+				.form-caption 
+					.big Send a request
+					.des Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, quae.
+			.form-wrap
+				.form-row
+					.form-group.col-12.col-md-6
+						label Name
+						input(type="text")
+					.form-group.col-12.col-md-6
+						label Email
+						input(type="email")
+					.form-group.col-12.col-md-6
+						label Phone
+						input(type="text")
+					.form-group.col-12.col-md-6
+						label Tour Title
+						input(type="text" value="")
+					.form-group.col-12
+						label Number of people
+						.form-row
+							.col-6
+								label Adult
+								input(type="text" value="")
+							.col-6
+								label Children
+								input(type="text" value="")
+					.form-group.col-12.col-md-6
+						label Departure date
+						input.datepicker(type="text" value="")
+					.form-group.col-12.col-md-6
+						label Number of nights
+						input(type="text" value="")
+					.form-group.col-12.col-md-6
+						label Budget per persion (if known)
+						input(type="text" value="")
+					.form-group.col-12.col-md-6
+						label How did you hear about AOJ
+						input(type="text" value="")
+					.form-group.col-12
+						label Level Of Accommodation
+						ul.checkbox
+							li
+								input#cb1(type="checkbox", name="checkbox1")
+								label(for="cb1") Luxury
+							li
+								input#cb2(type="checkbox", name="checkbox1")
+								label(for="cb2") First CLass
+							li
+								input#cb3(type="checkbox", name="checkbox1")
+								label(for="cb3") Superior
+							li
+								input#cb4(type="checkbox", name="checkbox1")
+								label(for="cb4") Mid-range
+					.form-group.col-12
+						label Interested in?
+						textarea(name="", cols="", rows="3")
+					.frm-btn
+						input(type="submit", value=" Send")

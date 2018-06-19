@@ -1,0 +1,127 @@
+.hotline
+	+pos(fix, null 30px 30px null)
+	z-index: 100
+	+fs(28rem)
+	display: block
+	font-weight: normal
+	width: 50px
+	height: 50px
+	line-height: 50px
+	text-align: center
+	background: $orange
+	color: color-rgba($white,1)
+	+bor-rad(50px)
+	text-shadow: none
+	animation-name: phone-ring
+	animation-duration: 2s
+	animation-iteration-count: infinite
+	a
+		+pos(rel,null)
+		z-index: 5
+	&:after
+		content: ''
+		display: block
+		+pos(abs, 0 null 0 0)
+		right: 0
+		background: $orange
+		opacity: 0.5
+		+bor-rad(50px)
+		+transform(scale3d(1.2,1.2,1))
+		animation-name: hotline-animate
+		animation-duration: 1s
+		animation-iteration-count: infinite
+
+footer
+	background: url(../img/footer.jpg) center center no-repeat
+	background-size: cover
+	+pos(rel,null)
+	&:before
+		content: ''
+		+pos(abs, 0 null 0 0)
+		right: 0
+		background: $black
+		opacity: 0.5
+	.footer-title
+		+fs(20rem)
+		font-family: 'montserrat'
+		font-weight: 600
+		color: $white
+		margin-bottom: 25px
+		+media-breakpoint-down(sm)
+			+fs(16rem)
+	.footer-des
+		+fs(14rem)
+		color: $white
+		margin-bottom: 90px
+		+media-breakpoint-down(sm)
+			+fs(13rem)
+	.footer-top
+		padding: 90px 0
+		+pos(rel,null)
+		z-index: 1
+		+media-breakpoint-down(sm)
+			padding: 50px 0
+		.col-auto
+			+media-breakpoint-down(sm)
+				flex: 1 0 50%
+				width: 50%
+				max-width: 50%
+	.footer-col
+		+media-breakpoint-down(sm)
+			margin-bottom: 50px
+		.title
+			+fs(20rem)
+			font-weight: 700
+			color: $white
+			margin-bottom: 30px
+			+media-breakpoint-down(sm)
+				+fs(16rem)
+		.footer-link
+			a
+				display: block
+				color: $white
+				+fs(16rem)
+				padding: 3px 0
+				+media-breakpoint-down(sm)
+					+fs(13rem)
+				&:hover
+					color: $orange
+	.footer-bottom
+		+pos(rel,null)
+		z-index: 1
+		+flexbox
+		justify-content: space-between
+		padding: 40px 0
+		border-top: 1px solid color-rgba($white,0.5)
+		+media-breakpoint-down(sm)
+			flex-wrap: wrap
+		.col-left
+			+media-breakpoint-down(sm)
+				width: 100%
+		.copyright
+			+fs(14rem)
+			color: $white
+			opacity: 0.5
+			margin-bottom: 10px
+			+media-breakpoint-down(sm)
+				width: 100%
+		.contact-info
+			+media-breakpoint-down(sm)
+				margin-bottom: 20px
+			ul
+				li
+					+fs(14rem)
+					color: $white
+					opacity: 0.5
+					+media-breakpoint-down(sm)
+						+fs(13rem)
+		.footer-nav
+			+flexbox
+			align-items: center
+			align-content: center
+			a
+				display: block
+				+ a
+					margin-left: 40px
+					+media-breakpoint-down(sm)
+						margin-left: 20px

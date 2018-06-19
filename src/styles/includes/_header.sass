@@ -1,0 +1,173 @@
+.homepage
+	header
+		background: transparent
+		box-shadow: none
+		+media-breakpoint-down(lg)
+			background: linear-gradient(color-rgba($black,0.5),color-rgba($black,0))
+		+media-breakpoint-up(xl)
+			&.minimal
+				background: $white
+				box-shadow: 0px 1px 5px color-rgba($black,0.1)
+				ul.menu-link
+					> li
+						> a
+							color: $main
+						.sub
+							background: color-rgba($black,0.8)
+							&:before
+								border-bottom-color: color-rgba($black,0.8)
+						&:hover
+							> a
+								color: $orange
+						&.active
+							> a
+								color: $orange
+			.sitelogo
+				height: 140px
+				img
+			ul.menu-link
+				height: 140px
+				> li
+					> a
+						color: $white
+					.sub
+						background: none
+						&:before
+							border-bottom-color: transparent
+header
+	+pos(fix, 0 0 null 0)
+	z-index: 1000
+	background: $white
+	box-shadow: 0px 1px 5px color-rgba($black,0.1)
+	+transition(all,0.5s)
+	+media-breakpoint-down(lg)
+		background: linear-gradient(color-rgba($black,0.7),color-rgba($black,0))
+		box-shadow: none
+	&.minimal
+		+media-breakpoint-up(xl)
+			.sitelogo
+				height: 70px
+				img
+			ul.menu-link
+				height: 70px
+				+media-breakpoint-down(lg)
+					height: auto
+				> li
+	.header-content
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: space-between
+	.btn-showmenu
+		display: none
+		+fs(24rem)
+		width: 40px
+		height: 40px
+		color: $white
+		+pos(rel,null)
+		z-index: 900
+		+media-breakpoint-down(lg)
+			+flexbox
+			justify-content: center
+			align-items: center
+	.overlay
+		+pos(fix, 0 null 0 0)
+		right: 0
+		z-index: 800
+		background: $black
+		opacity: 0.8
+		display: none
+	.sitelogo
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: center
+		height: 100px
+		+transition(all,0.5s)
+		+media-breakpoint-down(lg)
+			height: 60px
+		a
+			display: block
+		img
+			height: 60px
+			+transition(all,0.5s)
+			+media-breakpoint-down(lg)
+				height: 50px
+	.menu
+		+media-breakpoint-down(lg)
+			+pos(fix, 0 null 0 0)
+			z-index: 1000
+			background: $white
+			max-width: 400px
+			width: calc(100% - 70px)
+			+transform(translateX(-100%))
+			+transition(all,0.5s)
+			&.open
+				+transform(translateX(0%))
+	.menu-logo
+		.sitelogo
+			display: none
+	.menu-content
+	.menu-wrap
+	ul.menu-link
+		+flexbox
+		align-items: center
+		align-content: center
+		height: 100px
+		text-shadow: 0px 1px 5px color-rgba($black,0.05)
+		+transition(all,0.5s)
+		+media-breakpoint-down(lg)
+			height: auto
+			flex-wrap: wrap
+		> li
+			+pos(rel,null)
+			+media-breakpoint-down(lg)
+				width: 100%
+				border-bottom: 1px dashed darken($white,10%)
+			+ li
+				margin-left: 35px
+				+media-breakpoint-down(lg)
+					margin-left: 0
+			> a
+				display: block
+				line-height: 20px
+				padding: 10px 0
+				color: $main
+				+fs(16rem)
+				+media-breakpoint-down(lg)
+					padding: 15px 30px
+			.sub
+				background: color-rgba($black,0.8)
+				// box-shadow: 0px 5px 20px color-rgba($black,0.1)
+				padding: 10px 20px
+				min-width: 180px
+				+pos(abs, auto null null -20px)
+				visibility: hidden
+				opacity: 0
+				+transition(all,0.5s)
+				&:before
+					content: ''
+					display: block
+					border: 5px solid transparent
+					border-bottom-color: color-rgba($black,0.8)
+					border-top: none
+					+pos(abs, -5px null null 50px)
+					+transition(all,0.5s)
+				ul
+					li
+						padding: 3px 0
+						a
+							color: $white
+							+fs(14rem)
+						&:hover
+							a
+								color: $orange
+			&:hover
+				> a
+					color: $orange
+				.sub
+					visibility: visible
+					opacity: 1
+			&.active
+				> a
+					color: $orange

@@ -1,0 +1,49 @@
+.support-page
+	padding: 60px 0px 0px
+
+.faq-list
+	margin-bottom: 60px
+	.faq
+		margin-bottom: 10px
+		.faq-title
+			+fs(15rem)
+			padding: 15px 25px
+			padding-left: 50px
+			background: darken($white,3%)
+			// +bor-rad(5px)
+			// border: 1px dashed darken($white,10%)
+			cursor: pointer
+			+transition(all,0.3s)
+			+pos(rel,null)
+			&:before
+				content: '\f059'
+				+pos(abs, 15px null null 20px)
+				+fs(18rem)
+			&:hover
+				color: $orange
+		.faq-content
+			display: none
+			border: 1px solid darken($white,10%)
+			padding: 20px
+			margin-top: 10px
+		&.active
+			.faq-title
+				color: $orange
+				background: color-rgba($orange,0.1)
+			.faq-content
+
+.send-mess
+	background: darken($white,3%)
+	padding: 20px
+	margin-bottom: 40px
+	.module-title
+		+fs(16rem)
+		font-weight: 700
+		margin-bottom: 15px
+		&:after
+			content: ''
+			display: block
+			width: 60px
+			height: 1px
+			background: $orange
+			margin-top: 10px

@@ -1,0 +1,88 @@
+.request-page
+	padding: 60px 0 0
+
+.request-form
+	margin: 0 auto 60px
+	background: $white
+	box-shadow: 0px 3px 20px color-rgba($black,0.1)
+	border: 1px solid darken($white,5%)
+	+pos(rel,null)
+	+flexbox
+	flex-wrap: wrap
+	// &:before
+	// 	content: ''
+	// 	+pos(abs, 0 null 0 0)
+	// 	width: 40%
+	// 	background: url(../img/booking.png) center bottom no-repeat
+	// 	background-size: contain
+	.module-title
+		+fs(24rem)
+		font-weight: 700
+		color: $orange
+		margin-bottom: 20px
+		&:after
+			content: ''
+			display: block
+			width: 60px
+			height: 1px
+			background: $orange
+			margin-top: 5px
+	.form-img
+		width: 40%
+		+pos(rel,null)
+		+media-breakpoint-down(md)
+			width: 100%
+			height: 200px
+		.img
+			+pos(abs,0 null 0 0)
+			right: 0
+			&:before
+				content: ''
+				+pos(abs, 0 null 0 0)
+				right: 0
+				z-index: 1
+				background: $black
+				opacity: 0.5
+		.form-caption
+			+pos(abs, 50% 0 null 0)
+			z-index: 3
+			color: $white
+			padding: 0px 70px
+			+transform(translateY(-50%))
+			text-align: center
+			+media-breakpoint-down(sm)
+				padding: 0px 15px
+			.big
+				+fs(32rem)
+				font-weight: 700
+				margin-bottom: 15px
+				&:after
+					content: ''
+					display: block
+					width: 100px
+					height: 1px
+					background: $orange
+					// opacity: 0.3
+					margin: 10px auto 0
+			.des
+				+fs(14rem)
+				// opacity: 0.8
+	.form-wrap
+		width: 60%
+		+pos(rel,null)
+		z-index: 1
+		padding: 60px
+		+media-breakpoint-down(lg)
+			padding: 30px
+		+media-breakpoint-down(md)
+			width: 100%
+			padding: 40px
+		+media-breakpoint-down(sm)
+			padding: 15px
+		&:after
+			// content: ''
+			+pos(abs, 10px 5px 10px null)
+			width: 3px
+			background: $orange
+		.frm-btn
+			padding: 0px 5px

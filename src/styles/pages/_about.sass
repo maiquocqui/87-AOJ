@@ -1,0 +1,273 @@
+.top-nav 
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+	background: $green
+
+.top-nav ul 
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+
+.top-nav ul a 
+	display: block
+	line-height: 20px
+	font-size: 1rem
+	font-weight: 600
+	text-transform: uppercase
+	color: #fff
+	padding: 15px 30px
+
+.about-section 
+	padding: 60px 0
+
+.about-section .about-img img 
+	width: 100%
+
+.about-section .about-img2 .row 
+	margin: 0px -5px
+
+.about-section .about-img2 .col-6 
+	padding: 0px 5px
+
+.about-section .about-img2 img 
+	margin-bottom: 0
+
+.about-section .about-img2 .img 
+	margin-bottom: 10px
+
+.about-section2 
+	position: relative
+
+.about-section2 .about-bg 
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+
+.about-section2 .about-bg:before 
+	content: ''
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0, 0, 0, 0.5)
+
+.about-section2 .about-content 
+	position: relative
+	z-index: 1
+
+.about-section2 .home-title, .about-section2 .page-des 
+	color: #fff
+
+.about-section2 .about-feature .feature figure .feature-icon 
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-pack: center
+	-webkit-justify-content: center
+	-ms-flex-pack: center
+	justify-content: center
+	-webkit-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+	height: 130px
+
+.about-section2 .about-feature .feature figure figcaption 
+	color: #fff
+
+.about-section2 .about-feature .feature figure figcaption .feature-name 
+	text-align: center
+	margin-bottom: 15px
+	font-size: 1.25rem
+	font-weight: 700
+
+.about-section2 .about-feature .feature figure figcaption .feature-des ul li 
+	position: relative
+	font-size: 1rem
+	margin-bottom: 10px
+
+.about-section2 .about-feature .feature figure figcaption .feature-des ul li:before 
+	content: '\f00c'
+	display: inline
+	vertical-align: middle
+	margin-right: 5px
+
+.about-section3 .about-team .team 
+	margin-bottom: 50px
+
+.about-section3 .about-team .team:nth-child(even) figure .team-img 
+	-webkit-box-ordinal-group: 3
+	-webkit-order: 2
+	-ms-flex-order: 2
+	order: 2
+
+.about-section3 .about-team .team:nth-child(even) figure figcaption 
+	-webkit-box-ordinal-group: 2
+	-webkit-order: 1
+	-ms-flex-order: 1
+	order: 1
+
+.about-section3 .about-team .team figure 
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	margin: 0px -15px
+
+@media (max-width: 991.98px) 
+	.about-section3 .about-team .team figure 
+		margin: 0
+	
+.about-section3 .about-team .team figure .team-img 
+	width: 50%
+	padding: 0px 15px
+
+@media (max-width: 991.98px) 
+	.about-section3 .about-team .team figure .team-img 
+		width: 100%
+		padding: 0
+
+.about-section3 .about-team .team figure .team-img img 
+	width: 100%
+
+.about-section3 .about-team .team figure figcaption 
+	width: 50%
+	padding: 0px 15px
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-webkit-align-items: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-align-content: center
+	-ms-flex-line-pack: center
+	align-content: center
+
+@media (max-width: 991.98px) 
+	.about-section3 .about-team .team figure figcaption 
+		width: 100%
+		background: #f7f7f7
+		padding: 30px
+
+.about-section3 .about-team .team figure figcaption .about-content 
+	width: 100%
+
+.about-section3 .member-list .slick-prev, .about-section3 .member-list .slick-next 
+	position: absolute
+	top: 50%
+	-webkit-transform: translateY(-50%)
+	-khtml-transform: translateY(-50%)
+	transform: translateY(-50%)
+	z-index: 5
+	font-size: 0
+	color: #666666
+	text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1)
+
+.about-section3 .member-list .slick-prev:before, .about-section3 .member-list .slick-next:before 
+	content: ''
+	font-family: 'Linearicons-Free'
+	font-size: 1.5rem
+
+.about-section3 .member-list .slick-prev:hover, .about-section3 .member-list .slick-next:hover 
+	color: #e86a2d
+	text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3)
+
+.about-section3 .member-list .slick-prev 
+	left: 0px
+
+.about-section3 .member-list .slick-prev:before 
+	content: '\e875'
+
+.about-section3 .member-list .slick-next 
+	right: 0px
+
+.about-section3 .member-list .slick-next:before 
+	content: '\e876'
+
+.about-section3 .member-list .member figure 
+	width: 250px
+	margin: 0 auto
+
+.about-section3 .member-list .member figure .member-img
+	width: 150px
+	height: 150px
+	border-radius: 50%
+	overflow: hidden
+	margin: 0 auto 15px
+
+.about-section3 
+	.member-list 
+		.member 
+			figure 
+				.member-img 
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+						border-radius: 50%
+				figcaption
+					text-align: center
+					.member-name
+						font-size: 1rem
+						font-weight: 700
+					.member-cv
+						font-size: 0.875rem
+						font-weight: 600
+						margin-bottom: 15px
+					.member-des
+						font-size: 0.875rem
+						color: #666666
+
+.about-team
+	.team
+		figure
+			.team-img
+				+media-breakpoint-down(md)
+					order: 1 !important
+			figcaption
+				+media-breakpoint-down(md)
+					order: 2 !important
+
+.about-section3
+	.member-list
+		.member
+			figure
+				+media-breakpoint-down(md)
+					width: 100%
+					padding: 0px 15px
+
+.top-nav
+	+media-breakpoint-down(sm)
+		ul
+			display: block
+			width: 100%
+			overflow: auto
+			white-space: nowrap
+			li
+				display: inline-block
+				width: auto
